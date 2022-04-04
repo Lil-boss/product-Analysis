@@ -1,7 +1,12 @@
 import React from 'react';
+import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import ReviewCart from '../ReviewCart/ReviewCart';
+import Api from '../../Hooks/Api';
+
 const Home = () => {
+    const [reviews, setReviews] = Api();
+    const reviewData = reviews.slice(0, 3);
+    console.log(reviewData);
     return (
         <div className='w-4/5 m-auto mt-10'>
             <section>
@@ -21,9 +26,29 @@ const Home = () => {
                 <div className='mb-10'>
                     <h1 className='text-center text-5xl mt-10'>Customer Reviews</h1>
                     <div className='grid grid-cols-3 gap-4'>
-                        <ReviewCart />
-                        <ReviewCart />
-                        <ReviewCart />
+                        {
+                            reviewData.map(data => <div className='mt-10 max-w-lg px-8 py-8 rounded-md shadow-lg bg-white relative'>
+                                <span className='flex space-x-0.5'>
+                                    <FaStar className='text-orange-500' />
+                                    <FaStar className='text-orange-500' />
+                                    <FaStar className='text-orange-500' />
+                                    <FaStar className='text-orange-500' />
+                                    <FaStar className='text-orange-500' />
+                                </span>
+                                <p className='my-4 text-sm font-medium leading-5 text-gray-500'>04-04-2022</p>
+                                <div className='mb-10'>
+                                    <p className='text-lg font-medium leading-5 text-gray-600'>
+                                        {data.body}
+                                    </p>
+                                </div>
+                                <div className='mt-6 flex items-center space-x-2 absolute bottom-6'>
+                                    <div className='flex flex-shrink-0 rounded-full border border-gray-200'>
+                                        <img className='w-8 h-8 object-cover rounded-full' src={data.picture} alt="" />
+                                    </div>
+                                    <span className='text-sm font-semibold leading-5 text-gray-900'>{data.name}</span>
+                                </div>
+                            </div >)
+                        }
                     </div>
                     <div className='flex justify-center'>
                         <Link to="/reviews" className='border-0 mt-10 bg-blue-400 w-1/3 h-10 rounded-md text-center text-white font-medium cursor-pointer'>

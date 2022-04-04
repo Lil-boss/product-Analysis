@@ -6,6 +6,7 @@ import Dashboard from './components/Dashboard/Dashboard'
 import About from './components/About/About'
 import Navbar from "./components/Navbar/Navbar";
 import Notfound from "./components/NotFound/Notfound";
+import Api from "./Hooks/Api";
 
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Notfound />} />
-
       </Routes>
     </div>
   );
