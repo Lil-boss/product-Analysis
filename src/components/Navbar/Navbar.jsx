@@ -12,7 +12,9 @@ const Navbar = () => {
                 <CustomLink className='mr-4 text-xl font-normal border-b-2 p-4 hover:text-blue-400' to="/">HOME</CustomLink>
                 <CustomLink className='mr-4 text-xl font-normal border-b-2 p-4 hover:text-blue-400' to="/reviews">REVIEWS</CustomLink>
                 <CustomLink className='mr-4 text-xl font-normal border-b-2 p-4 hover:text-blue-400' to="/dashboard">DASHBOARD</CustomLink>
+                <CustomLink className='mr-4 text-xl font-normal border-b-2 p-4 hover:text-blue-400' to="/blogs">BLOGS</CustomLink>
                 <CustomLink className='mr-4 text-xl font-normal border-b-2 p-4 hover:text-blue-400' to="/about">ABOUT</CustomLink>
+
             </div>
         </div>
     );

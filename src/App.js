@@ -7,6 +7,7 @@ import About from './components/About/About'
 import Navbar from "./components/Navbar/Navbar";
 import Notfound from "./components/NotFound/Notfound";
 import Api from "./Hooks/Api";
+import Blogs from "./components/Blogs/Blogs";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Notfound />} />
       </Routes>

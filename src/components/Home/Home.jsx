@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className='w-4/5 m-auto mt-10'>
             <section>
-                <div className='grid grid-cols-2 gap-10 p-10'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-10 p-10'>
                     <div className='flex flex-col justify-center '>
                         <h1 className='text-5xl font-medium text-blue-400'>The best chocolate cake</h1>
                         <h1 className='text-5xl font-medium text-gray-800 text-left'>in your town</h1>
@@ -25,7 +25,7 @@ const Home = () => {
             <section>
                 <div className='mb-10'>
                     <h1 className='text-center text-5xl mt-10'>Customer Reviews</h1>
-                    <div className='grid grid-cols-3 gap-4'>
+                    <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-4 items-center'>
                         {
                             reviewData.map(data => <div className='mt-10 max-w-lg px-8 py-8 rounded-md shadow-lg bg-white relative'>
                                 <span className='flex space-x-0.5'>
