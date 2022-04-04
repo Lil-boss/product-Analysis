@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Api from '../../Hooks/Api';
 
 const Home = () => {
-    const [reviews, setReviews] = Api();
+    const [reviews] = Api();
     const reviewData = reviews.slice(0, 3);
     console.log(reviewData);
     return (

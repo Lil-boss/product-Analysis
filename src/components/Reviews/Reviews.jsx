@@ -3,7 +3,7 @@ import Api from "../../Hooks/Api"
 import ReviewCart from '../ReviewCart/ReviewCart';
 
 const Product = () => {
-    const [reviews, setReviews] = Api();
+    const [reviews] = Api();
 
     return (
         <div className='w-4/5 m-auto'>

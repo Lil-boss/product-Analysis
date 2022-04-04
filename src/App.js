@@ -6,7 +6,6 @@ import Dashboard from './components/Dashboard/Dashboard'
 import About from './components/About/About'
 import Navbar from "./components/Navbar/Navbar";
 import Notfound from "./components/NotFound/Notfound";
-import Api from "./Hooks/Api";
 import Blogs from "./components/Blogs/Blogs";
 
 
