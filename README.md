@@ -1,6 +1,6 @@
 # Star Shop
 
-[Live Site](https://github.com/facebook/create-react-app).
+[Live Site](https://star-sh0p.netlify.app/).
 
 # Project Description
 
