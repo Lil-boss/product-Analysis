@@ -1,9 +1,9 @@
-import React from 'react';
-
+import React from "react";
+import Chart from '../Charts/Chart'
 const Contact = () => {
     return (
         <div>
-            <h2>Contact</h2>
+            <Chart />
         </div>
     );
 };
